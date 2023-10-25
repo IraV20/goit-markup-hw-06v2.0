@@ -111,7 +111,6 @@ header {
 .site-nav {
   display: flex;
   gap: 40px;
-  margin-right: 332px;
 }
 
 .site-nav .link {
@@ -508,10 +507,8 @@ header {
   left: 0;
   width: 100%;
 
-  display: flex;
-  align-items: center;
+  padding: 40px 32px;
   height: 100%;
-  padding: 0 32px;
 
   background-color: var(--primary-brand-clr);
 
