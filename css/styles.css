@@ -13,6 +13,11 @@
   --modal-back-clr: #fcfcfc;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   background-color: var(--primery-white-clr);
   color: var(--body-text-clr);
@@ -88,6 +93,13 @@ input {
 
 header {
   border-bottom: 1px solid var(--hearline-clr);
+  position: fixed;
+  z-index: 9999;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  background-color: #e5e5e6;
+  width: 100%;
 }
 
 .mob-header {
@@ -628,7 +640,6 @@ header {
   overflow: auto;
 
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
 }
 

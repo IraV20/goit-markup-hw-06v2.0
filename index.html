@@ -34,10 +34,10 @@
               <a href="./index.html" class="link current">Studio</a>
             </li>
             <li class="item">
-              <a href="" class="link">Portfolio</a>
+              <a href="#portfolio" class="link">Portfolio</a>
             </li>
             <li class="item">
-              <a href="" class="link">Contacts</a>
+              <a href="#contacts" class="link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -120,7 +120,7 @@
       <!--         HERO        -->
       <section class="hero">
         <h1 class="title">Effective Solutions for Your Business</h1>
-        <button type="button" class="button main">Order Service</button>
+        <button type="button" class="button main" data-modal-open>Order Service</button>
       </section>
 
       <!--       BENEFITS     -->
@@ -358,7 +358,7 @@
       </section>
 
       <!--       PORTFOLIO   -->
-      <section class="section portfolio">
+      <section class="section portfolio" id="portfolio">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -628,7 +628,7 @@
     </main>
 
     <!--           FOOTER              -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <div class="desc">
           <a href="./index.html" class="logo"
@@ -688,9 +688,9 @@
     </footer>
 
     <!--                   MODAL          -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="button close">
+        <button type="button" class="button close" data-modal-close>
           <svg class="icon" width="8px" height="8px">
             <use href="./img/icons.svg#icon-close-black"></use>
           </svg>
@@ -757,5 +757,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script> 
+    <script src="./js/main-nav.js"></script>
   </body>
 </html>
